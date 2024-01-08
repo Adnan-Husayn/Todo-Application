@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export function CreateTodo(props) {
-    // react-query
+
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
 
@@ -26,7 +26,6 @@ export function CreateTodo(props) {
             padding: 10,
             margin: 10
         }} onClick={() => {
-            // axios
             fetch("http://localhost:3000/todo", {
                 method: "POST",
                 body: JSON.stringify({
