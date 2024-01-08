@@ -38,7 +38,7 @@ export function CreateTodo(props) {
             })
                 .then(async function(res) {
                     const json = await res.json();
-                    alert("Todo added");
+                    window.location.reload();
                 })
         }}>Add a todo</button>
     </div>
